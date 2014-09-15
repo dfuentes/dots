@@ -3,6 +3,7 @@
 
 (depends-on "pallet")
 (depends-on "auto-complete")
+(depends-on "better-defaults")
 (depends-on "cask")
 (depends-on "coffee-mode")
 (depends-on "color-theme")
