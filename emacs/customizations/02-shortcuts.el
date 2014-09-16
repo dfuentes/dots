@@ -42,4 +42,10 @@
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 
+(when (eq system-type 'darwin)
+  (setq mac-option-modifier 'alt)
+  (setq mac-command-modifier 'meta)
+  (global-set-key [kp-delete] 'delete-char)
+)
+
 (provide '02-shortcuts)
