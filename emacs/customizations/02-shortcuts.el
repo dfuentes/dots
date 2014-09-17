@@ -41,11 +41,13 @@
 (global-set-key (kbd "C-\\") 'comment-or-uncomment-region-or-line)
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
+(global-set-key (kbd "<Home>") 'move-beginning-of-line)
+(global-set-key (kbd "<End>") 'move-end-of-line)
 
-;; (when (eq system-type 'darwin)
-;;   (setq mac-option-modifier 'alt)
-;;   (setq mac-command-modifier 'meta)
-;;   (global-set-key [kp-delete] 'delete-char)
-;; )
+(when (eq system-type 'darwin)
+  (setq mac-control-modifier 'meta)
+  (setq mac-command-modifier 'control)
+  (global-set-key [kp-delete] 'delete-char)
+)
 
 (provide '02-shortcuts)
