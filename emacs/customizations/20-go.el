@@ -3,6 +3,8 @@
 (require 'go-mode)
 (require 'go-autocomplete)
 
+(setq gofmt-command "goimports")
+
 (add-hook 'go-mode-hook
 	  (lambda ()
 	    (setq tab-width 4)

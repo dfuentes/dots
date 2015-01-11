@@ -1,14 +1,16 @@
 (require 'yasnippet)
-(yas-global-mode 1)
+;; (yas-global-mode 1)
 
-(provide '05-autocomplete)
 (require 'auto-complete-config)
 
 ;; (add-to-list 'ac-dictionary-directories ~/.emacs.d/ac-dict)
 (ac-config-default)
 ;; (setq ac-auto-start nil)
-(setq ac-quick-help-delay 0.5)
+(setq ac-quick-help-delay 1)
 (ac-set-trigger-key "TAB")
+(define-key ac-completing-map [return] nil)
+(define-key ac-completing-map "\r" nil)
+(define-key ac-completing-map "<return>" nil)
 (define-key ac-mode-map [(control tab)] 'auto-complete)
 (setq-default ac-sources '(ac-source-yasnippet
 			   ac-source-dictionary
