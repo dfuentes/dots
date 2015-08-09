@@ -15,7 +15,6 @@
 
 (diminish 'auto-complete-mode)
 (diminish 'yas-minor-mode)
-(diminish 'magit-auto-revert-mode)
 (diminish 'auto-fill-function)
 (diminish 'isearch-mode)
 
