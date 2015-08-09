@@ -1,4 +1,4 @@
-(require 'cask "/usr/local/Cellar/cask/0.7.1/cask.el")
+(require 'cask "/home/dfuentes/.cask/cask.el")
 (cask-initialize)
 (require 'pallet)
 

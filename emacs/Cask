@@ -1,5 +1,7 @@
 (source "elpy" "http://jorgenshaefer.github.io/packages/")
+(source marmalade)
 (source melpa)
+(source gnu)
 
 (depends-on "pallet")
 (depends-on "auto-complete")
@@ -17,6 +19,8 @@
 (depends-on "go-eldoc")
 (depends-on "go-mode")
 (depends-on "go-snippets")
+(depends-on "helm")
+(depends-on "helm-spotify")
 (depends-on "jedi")
 (depends-on "js2-mode")
 (depends-on "json-mode")
@@ -24,3 +28,5 @@
 (depends-on "markdown-mode")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+(depends-on "multi-term")
+(depends-on "terraform-mode")

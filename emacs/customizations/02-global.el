@@ -1,3 +1,4 @@
+(require 'multi-term)
 (require 'dired-details+)
 (require 'color-theme)
 (load-theme 'tango-dark)
@@ -17,5 +18,16 @@
   "Prevent y-or-n-p from activating a dialog"
   (let ((use-dialog-box nil))
     ad-do-it))
+
+;; remember to change back to 12
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
+
+(setq multi-term-program "/bin/zsh")
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; disable magit upgrade warning
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 (provide  '02-global)
 
