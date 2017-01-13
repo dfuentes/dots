@@ -28,6 +28,6 @@
 
 ;; disable magit upgrade warning
 (setq magit-last-seen-setup-instructions "1.4.0")
-
+(setq inhibit-startup-message t)
 (provide  '02-global)
 

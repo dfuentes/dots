@@ -41,7 +41,7 @@
 (global-set-key (kbd "C-\\") 'comment-or-uncomment-region-or-line)
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
-(global-set-key (kbd "C-x 4") 'delete-window)
+;; (global-set-key (kbd "C-x 4") 'delete-window)
 (global-set-key [home] 'move-beginning-of-line)
 (global-set-key [end] 'move-end-of-line)
 
